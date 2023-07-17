@@ -30,7 +30,7 @@ GO
 CREATE PROCEDURE [dbo].[Enrollments_GetList]
 AS
 	SELECT
-		EnrollmentId
+		EnrollmentId,
 		StudentId,
 		CourseId
 	FROM [dbo].[Enrollments]
