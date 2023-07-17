@@ -22,7 +22,7 @@ namespace CourseManager.Repository
         {
             List<EnrollmentModel> enrollments = new List<EnrollmentModel>();
 
-            var sql = "Enrollment_GetList";
+            var sql = "Enrollments_GetList";
             using (SqlConnection connection = new SqlConnection(_connectionString))
             {
                 enrollments = connection.Query<EnrollmentModel>(sql).ToList();
